@@ -318,18 +318,33 @@
                </svg>
             </button>
             <div class="modal-form">
-               <form class="js-speaker-form">
-                  <label for="user-name">Имя</label>
-                  <input type="text" name="user-name" id="user-name">
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel">
-                  <label for="mail">Почта</label>
-                  <input type="email" name="email" id="mail">
-                  <label for="coment">Комментарий</label>
-                  <textarea name="" id="" cols="30" rows="10" id="coment"></textarea>
-                  <input type="checkbox" name="" id="agreement">
-                  <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                  <button type="submit">Отправить</button>
+               <h2>Оставьте свои данные, мы вам перезвоним</h2>
+               <form class="speaker-form">
+                  <div class="form-fild">
+                     <label for="user-name">Имя</label>
+                     <input type="text" name="user-name" id="user-name">
+                  </div>
+                  <div class="form-fild">
+                     <label for="tel">Телефон</label>
+                     <input type="tel" name="tel" id="tel">
+                  </div>
+                  <div class="form-fild">
+                     <label for="mail">Почта</label>
+                     <input type="email" name="email" id="mail">
+                  </div>
+                  <div class="form-fild">
+                     <label for="coment">Комментарий</label>
+                     <textarea name="feedback" rows="4" id="coment" placeholder="Введите текст"></textarea>
+                  </div>
+                  <div class="form-agreement">
+                     <label class="agreement" for="agreement">
+                        <input type="checkbox" name="agreement" id="agreement">Соглашаюсь с рассылкой и принимаю
+                        <span>Условия договора</span></label>
+                  </div>
+
+                  <div class="form-fild-button">
+                     <button type="submit">Отправить</button>
+                  </div>
                </form>
             </div>
          </div>
@@ -394,18 +409,7 @@
       </div>
    </footer>
    <script src="./js/modal.js"></script>
-   <!-- <script>
-      (() => {
-         document
-            .getSelection('.js-speaker-form')
-            .addEventListener('submit', e => {
-               e.preventDefault();
-               new FormData(e.currentTarget).formEach((value, name) =>
-                  console.log(`${name}: ${value}`),
-               );
-            });
-      })();
-   </script> -->
+
 </body>
 
 

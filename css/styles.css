@@ -657,7 +657,8 @@ button {
    display: flex;
    flex-direction: column;
    position: absolute;
-   padding: 8px;
+   padding-top: 8px;
+   padding-right: 8px;
    width: 528px;
    height: 581px;
    background: var(--body-background-color);
@@ -672,13 +673,95 @@ button {
 
 .modal-form {
    padding-left: 41px;
-   padding-right: 39px;
+   padding-right: 31px;
    padding-bottom: 40px;
 }
 
-.js-speaker-form {
+.modal-form h2 {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 23px;
+   letter-spacing: 0.03em;
+   margin-bottom: 12px;
+   color: var(--title-text-color);
+}
 
+.speaker-form {
+   display: flex;
+   flex-direction: column;
    outline: 1px solid tomato;
+}
+
+.speaker-form button {
+   background-color: var(--logo-background-color);
+   color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   font-weight: 700;
+   border-radius: 4px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+   height: 50px;
+   min-width: 200px;
+   padding-left: 29px;
+   padding-right: 28px;
+}
+
+.form-fild-button {
+   display: flex;
+   justify-content: center;
+}
+
+.form-fild {
+   display: flex;
+   flex-direction: column;
+}
+
+.form-fild label {
+   margin-bottom: 4px;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+   color: var(--primary-text-color);
+}
+
+.form-fild input {
+   height: 40px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   margin-bottom: 10px;
+}
+
+.form-fild textarea {
+   margin-bottom: 20px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+   padding: 12px 16px;
+   height: 120px;
+   border-radius: 4px;
+   resize: none;
+}
+
+.form-agreement {
+   display: flex;
+   justify-content: center;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: var(--primary-text-color);
+}
+
+.form-agreement span {
+
+   color: var(--logo-color);
+   border-bottom: 1px solid var(--logo-color);
+}
+
+.agreement {
+   margin-bottom: 30px;
 }
 
 .btn-close-service {
@@ -813,9 +896,6 @@ footer {
    margin-left: auto;
 }
 
-
-
-
 .but-mailing {
    display: flex;
    justify-content: space-between;
@@ -840,7 +920,6 @@ footer {
 
 .but-mailing-mail {
    display: flex;
-
 }
 
 .mailing-list {
@@ -860,7 +939,6 @@ footer {
    background-color: var(--section-background);
    letter-spacing: 0.03em;
    border: 1px solid rgba(255, 255, 255, 0.3);
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
    padding-left: 16px;
 }
