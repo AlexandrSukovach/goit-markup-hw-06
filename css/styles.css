@@ -751,7 +751,6 @@ footer {
 
 
 .social h3 {
-   font-family: Roboto;
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
@@ -791,4 +790,60 @@ footer {
 
 .socmedia {
    fill: currentColor;
+}
+
+.mail-mailing {
+   margin-left: auto;
+}
+
+
+
+
+.but-mailing {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--logo-background-color);
+   color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   font-weight: 700;
+   border-radius: 4px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+   height: 50px;
+   min-width: 200px;
+   padding-left: 29px;
+   padding-right: 28px;
+   margin-left: 12px;
+}
+
+.but-mailing svg {
+   margin-left: 10px;
+}
+
+.but-mailing-mail {
+   display: flex;
+
+}
+
+.mailing-list {
+   display: block;
+   color: var(--accent-color);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.but-mailing-mail input {
+   width: 358px;
+   height: 50px;
+   background-color: var(--section-background);
+   letter-spacing: 0.03em;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   padding-left: 16px;
 }
