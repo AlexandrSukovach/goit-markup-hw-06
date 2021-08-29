@@ -150,7 +150,6 @@ img {
    color: var(--logo-color);
 }
 
-
 .auth-nav {
    display: flex;
    align-items: center;
@@ -675,7 +674,7 @@ button {
    outline: 1px solid tomato;
    padding-top: 8px;
    padding-right: 8px;
-
+   margin-bottom: 2px;
 }
 
 .modal-form {
@@ -689,14 +688,13 @@ button {
 
 .modal-form h2 {
    text-align: center;
-   font-family: Roboto;
-   font-style: normal;
-   font-weight: bold;
    font-size: 20px;
-   line-height: 23px;
+   line-height: 1.17;
    letter-spacing: 0.03em;
+   height: 23px;
    margin-bottom: 12px;
    color: var(--title-text-color);
+
 }
 
 .speaker-form {
@@ -704,10 +702,6 @@ button {
    flex-direction: column;
    outline: 1px solid tomato;
 }
-
-
-
-
 
 .form-fild {
    display: flex;
@@ -746,7 +740,8 @@ button {
    font-size: 12px;
    line-height: 1.17;
    letter-spacing: 0.01em;
-   color: var(--primary-text-color);
+   height: 14px;
+
 }
 
 .form-fild input {
@@ -769,11 +764,10 @@ button {
    line-height: 1.17;
    letter-spacing: 0.01em;
    color: var(--primary-text-color);
+   height: 14px;
 }
 
 .form-coment textarea {
-
-
    border: 1px solid rgba(33, 33, 33, 0.2);
    font-size: 12px;
    line-height: 1.17;
@@ -790,7 +784,6 @@ button {
    letter-spacing: 0.01em;
    text-align: left;
    color: rgba(117, 117, 117, 0.5);
-
 }
 
 .form-agreement {
@@ -801,18 +794,23 @@ button {
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: var(--primary-text-color);
+   height: 24px;
    margin-bottom: 30px;
 }
 
-.form-agreement span {
+.form-agreement a {
    color: var(--logo-color);
    border-bottom: 1px solid var(--logo-color);
 }
 
-.agreement {}
+.agreement {
+   margin-left: 8.38px;
+}
 
 .btn-close-service {
-
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 30px;
    height: 30px;
    background-color: var(--accent-color);
@@ -893,7 +891,6 @@ footer {
    color: var(--logo-color);
 }
 
-
 .social h3 {
    font-weight: 700;
    font-size: 14px;
@@ -903,7 +900,6 @@ footer {
    color: var(--accent-color);
    margin-bottom: 20px;
 }
-
 
 .social-site {
    display: flex;
@@ -980,6 +976,7 @@ footer {
    width: 358px;
    height: 50px;
    background-color: var(--section-background);
+   color: var(--accent-color);
    letter-spacing: 0.03em;
    border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 4px;
