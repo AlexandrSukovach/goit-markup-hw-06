@@ -657,8 +657,6 @@ button {
    display: flex;
    flex-direction: column;
    position: absolute;
-   padding-top: 8px;
-   padding-right: 8px;
    width: 528px;
    height: 581px;
    background: var(--body-background-color);
@@ -671,13 +669,26 @@ button {
 
 }
 
+.modal-button-close {
+   display: flex;
+   justify-content: flex-end;
+   outline: 1px solid tomato;
+   padding-top: 8px;
+   padding-right: 8px;
+
+}
+
 .modal-form {
-   padding-left: 41px;
-   padding-right: 31px;
+
+   outline: 1px solid tomato;
+   padding-left: 40px;
+   padding-right: 40px;
    padding-bottom: 40px;
+
 }
 
 .modal-form h2 {
+   text-align: center;
    font-family: Roboto;
    font-style: normal;
    font-weight: bold;
@@ -694,7 +705,23 @@ button {
    outline: 1px solid tomato;
 }
 
-.speaker-form button {
+
+
+
+
+.form-fild {
+   display: flex;
+   flex-direction: column;
+   outline: 1px solid tomato;
+   margin-bottom: 10px;
+}
+
+.form-fild-button {
+   display: flex;
+   justify-content: center;
+}
+
+.form-fild-button button {
    background-color: var(--logo-background-color);
    color: var(--accent-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -706,16 +733,12 @@ button {
    min-width: 200px;
    padding-left: 29px;
    padding-right: 28px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-fild-button {
-   display: flex;
-   justify-content: center;
-}
-
-.form-fild {
-   display: flex;
-   flex-direction: column;
+.form-fild-button button:hover,
+.form-fild-button button:focus {
+   background-color: var(--logo-background-click);
 }
 
 .form-fild label {
@@ -730,11 +753,27 @@ button {
    height: 40px;
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
-   margin-bottom: 10px;
+
 }
 
-.form-fild textarea {
+.form-coment {
+   display: flex;
+   flex-direction: column;
    margin-bottom: 20px;
+   outline: 1px solid tomato;
+}
+
+.form-coment label {
+   margin-bottom: 4px;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+   color: var(--primary-text-color);
+}
+
+.form-coment textarea {
+
+
    border: 1px solid rgba(33, 33, 33, 0.2);
    font-size: 12px;
    line-height: 1.17;
@@ -745,30 +784,35 @@ button {
    resize: none;
 }
 
+.form-coment textarea::placeholder {
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+   text-align: left;
+   color: rgba(117, 117, 117, 0.5);
+
+}
+
 .form-agreement {
    display: flex;
    justify-content: center;
+   align-items: center;
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: var(--primary-text-color);
+   margin-bottom: 30px;
 }
 
 .form-agreement span {
-
    color: var(--logo-color);
    border-bottom: 1px solid var(--logo-color);
 }
 
-.agreement {
-   margin-bottom: 30px;
-}
+.agreement {}
 
 .btn-close-service {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-left: auto;
+
    width: 30px;
    height: 30px;
    background-color: var(--accent-color);
@@ -898,7 +942,7 @@ footer {
 
 .but-mailing {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    background-color: var(--logo-background-color);
    color: var(--accent-color);
@@ -909,10 +953,9 @@ footer {
    letter-spacing: 0.06em;
    height: 50px;
    min-width: 200px;
-   padding-left: 29px;
-   padding-right: 28px;
    margin-left: 12px;
 }
+
 
 .but-mailing svg {
    margin-left: 10px;
@@ -941,4 +984,8 @@ footer {
    border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 4px;
    padding-left: 16px;
+}
+
+.but-mailing-mail input::placeholder {
+   color: var(--accent-footer-color);
 }
