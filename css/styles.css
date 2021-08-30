@@ -708,6 +708,7 @@ button {
    flex-direction: column;
    outline: 1px solid tomato;
    margin-bottom: 10px;
+   position: relative;
 }
 
 .form-fild-button {
@@ -736,6 +737,7 @@ button {
 }
 
 .form-fild label {
+
    margin-bottom: 4px;
    font-size: 12px;
    line-height: 1.17;
@@ -744,11 +746,28 @@ button {
 
 }
 
-.form-fild input {
+
+.form-input {
+
    height: 40px;
    border: 1px solid rgba(33, 33, 33, 0.2);
+   padding-left: 42px;
    border-radius: 4px;
 
+}
+
+.form-input:focus {
+   border: 1px solid tomato;
+}
+
+.icon-form-fild {
+   position: absolute;
+   left: 12px;
+   top: 50%;
+}
+
+.form-input:focus~.icon-form-fild {
+   fill: var(--logo-background-color);
 }
 
 .form-coment {
