@@ -671,15 +671,12 @@ button {
 .modal-button-close {
    display: flex;
    justify-content: flex-end;
-   outline: 1px solid tomato;
    padding-top: 8px;
    padding-right: 8px;
    margin-bottom: 2px;
 }
 
 .modal-form {
-
-   outline: 1px solid tomato;
    padding-left: 40px;
    padding-right: 40px;
    padding-bottom: 40px;
@@ -700,13 +697,11 @@ button {
 .speaker-form {
    display: flex;
    flex-direction: column;
-   outline: 1px solid tomato;
 }
 
 .form-fild {
    display: flex;
    flex-direction: column;
-   outline: 1px solid tomato;
    margin-bottom: 10px;
    position: relative;
 }
@@ -746,7 +741,6 @@ button {
 
 }
 
-
 .form-input {
 
    height: 40px;
@@ -756,8 +750,11 @@ button {
 
 }
 
+
 .form-input:focus {
-   border: 1px solid tomato;
+   outline: none;
+   border-color: var(--logo-color);
+
 }
 
 .icon-form-fild {
@@ -774,7 +771,6 @@ button {
    display: flex;
    flex-direction: column;
    margin-bottom: 20px;
-   outline: 1px solid tomato;
 }
 
 .form-coment label {
@@ -795,6 +791,11 @@ button {
    height: 120px;
    border-radius: 4px;
    resize: none;
+}
+
+.form-coment textarea:focus {
+   outline: none;
+   border-color: var(--logo-color);
 }
 
 .form-coment textarea::placeholder {
