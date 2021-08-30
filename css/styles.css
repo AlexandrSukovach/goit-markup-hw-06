@@ -809,13 +809,55 @@ button {
 .form-agreement {
    display: flex;
    justify-content: center;
-   align-items: center;
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: var(--primary-text-color);
    height: 24px;
    margin-bottom: 30px;
+
+}
+
+
+.form-agreement .checkbox {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.agreement-icon-check {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.checkbox:checked~.agreement-icon {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.checkbox:checked~.agreement-icon-check {
+   left: 1px;
+   top: 3px;
+   width: auto;
+   height: auto;
+   clip: auto;
 }
 
 .form-agreement a {
@@ -824,7 +866,14 @@ button {
 }
 
 .agreement {
-   margin-left: 8.38px;
+   position: relative;
+   padding-left: 23px;
+}
+
+.agreement-icon {
+   position: absolute;
+   left: 0;
+   top: 2px;
 }
 
 .btn-close-service {
@@ -1001,6 +1050,12 @@ footer {
    border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 4px;
    padding-left: 16px;
+}
+
+.but-mailing-mail input:focus {
+   outline: none;
+   border-color: rgba(255, 255, 255, 0.3);
+   color: var(--accent-footer-color);
 }
 
 .but-mailing-mail input::placeholder {
